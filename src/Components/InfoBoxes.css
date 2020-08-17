@@ -1,0 +1,52 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+}
+
+.infoBox:not(:last-child) {
+  margin-right: 10px;
+}
+
+.infoBox--selected--blue{
+  border-top: 10px solid blue;
+}
+
+.infoBox--selected--green{
+  border-top: 10px solid green;
+}
+
+.infoBox--selected--red{
+  border-top: 10px solid red;
+}
+
+.blue .infoBox__cases{
+  color: blue;
+}
+
+.red .infoBox__cases{
+  color: red;
+}
+
+.green .infoBox__cases{
+  color: green;
+}
+
+.infoBox__cases {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+}
+
+@media(max-width : 720px){
+  .infoBox:not(:last-child){
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+}
